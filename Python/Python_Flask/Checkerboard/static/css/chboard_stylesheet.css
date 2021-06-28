@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+    margin-top: 70px;
+  } 
+  .color1 {
+    background-color:var(--color);
+
+  }
+  .color2 {
+    background-color:var(--color);
+  }
+  
+  table tr td{
+    width: 40px;
+    height: 40px;
+
+  }
+  table{
+    margin-left: 500px;
+  }

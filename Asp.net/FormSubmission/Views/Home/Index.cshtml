@@ -1,0 +1,57 @@
+﻿@model FormSubmission.Models.User
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/styles.css"/>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+    
+    <title>Form Sumbition</title>
+</head>
+<body id="body">
+    <div id="box">
+ <h3>Enter Your Information</h3>
+<form asp-action="Home" asp-controller="Home" method="post">
+    <p>
+        <span asp-validation-for="FirstName" class="span"></span><br/>
+        <label asp-for="FirstName">First Name</label>
+        <input asp-for="FirstName" class="input1"/>
+    </p>
+
+    <p>
+        <span asp-validation-for="LastName" class="span"></span><br/>
+        <label asp-for="LastName">Last Name</label>
+        <input asp-for="LastName" class="input1">  
+    </p>
+
+    <p>
+        <span asp-validation-for="Age" class="span"></span><br/>
+        <label asp-for="Age"></label>
+        <input asp-for="Age" class="input2">  
+    </p>
+    
+
+    <p>
+        <span asp-validation-for="Email" class="span"></span><br/>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="input3">
+    </p>
+
+    <p>
+        <span asp-validation-for="Password" class="span"></span><br/>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="input4">
+    </p>
+
+    <button value="Sumbit" type="submit" class="btn btn-warning" id="button">Sumbit</button>
+  
+</form>
+    </div>
+       
+</body>
+</html>

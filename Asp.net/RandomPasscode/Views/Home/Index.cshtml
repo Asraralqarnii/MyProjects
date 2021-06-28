@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/styles.css"/>
+
+
+    <title>Random</title>
+</head>
+<body>
+    <div class="text-center">
+    <h5>Random passcode (passcode #@ViewBag.count)</h5>
+<div id="box"> 
+    <h2>@ViewBag.passcode</h2>
+
+</div>
+<div id="btn">
+    <a href="" class="btn btn-sm btn-success">Generate</a>
+     <a asp-action="Reset" asp-controller="Home" class="btn btn-sm btn-secondary">End Session</a>
+</div>
+
+
+</div>
+</body>
+</html>

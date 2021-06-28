@@ -1,0 +1,22 @@
+﻿h3,p,h4{
+  text-align: center;
+}
+body{
+  margin-top: 5%;
+}
+#box{
+  border: 1px solid black;
+  border-radius: 9px;
+  background-color: burlywood;
+  width: 500px;
+  margin: auto;
+  align-items: center;
+  padding: 10px 10px 80px 10px;
+}
+#listbox{
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 5%;
+  width: 100px;
+
+}

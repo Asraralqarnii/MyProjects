@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">   
+<title>Ninja Money</title>
+</head>
+<body>
+    <div id="all">
+        <div id="top_left">
+            <h2> Welcome in Ninja Gold</h2>
+            <p>Your Gold: <input type="number" name="gold" value={{request.session.gold}} > </p>
+        </div>
+    
+    <!-- 4 form-->
+    
+    <!-- first form-->
+    <div id="forms">
+        <form action="/process_money" method="POST">
+            {%csrf_token%}
+            <div class="border">
+                <h3>Farm</h3>
+                <input type="hidden" name="location" value="farm">
+                <p>(earns 10-20 golds)</p>
+                <button type="submit">Find Gold!</button>   
+             </div>
+
+        </form>
+        
+     
+     <!-- second form-->
+        <form action="/process_money" method="POST">
+            {%csrf_token%}
+             <div class="border">
+                 <h3>Cave</h3>
+                 <input type="hidden" name="location" value="cave">
+                 <p>(earns 5-10 golds)</p>
+                 <button type="submit">Find Gold!</button>
+            </div>
+        </form>
+
+     
+     <!-- third form-->
+        <form action="/process_money" method="POST">
+            {%csrf_token%}
+            <div class="border">
+                <h3>House</h3>
+                <input type="hidden" name="location" value="house">
+                <p>(earns 2-5 golds)</p>
+                <button type="submit">Find Gold!</button>
+             </div>
+        </form>
+
+     
+     <!-- fourth form-->
+        <form action="/process_money" method="POST">
+            {%csrf_token%}
+            <div class="border">
+                <h3>Casino</h3>
+                <input type="hidden" name="location" value="casino">
+                <p>(earns/takes 0-50 golds)</p>
+                <button type="submit">Find Gold!</button>
+            </div>
+        </form>
+
+    
+    </div>
+    <div id="down">
+        <p>Activities:</p>
+        <div id="box"> 
+            {% for act in request.session.activities %}
+                <p class="{{act.color}}"> {{act.text}}</p>
+           
+          {% endfor %}
+
+
+        </div>
+    </div>
+    
+
+    </div>
+   
+    
+
+</body>
+</html>

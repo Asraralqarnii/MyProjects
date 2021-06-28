@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}"> 
+    
+    <title>Login/Registration</title>
+  </head>
+  <body >
+      <div id="header"> 
+        <h1 >Register  </h1>     
+        <h1 id="log"> Login </h1>
+      </div>
+    <div>
+        <!--print error message -->
+        {% if messages %}
+            <ul class="messages">
+            {% for message in messages %}
+                <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>
+                {{ message }}
+                </li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+
+    </div>
+    
+<div id="togther">
+    <div id="left">
+        <form action="/register" method="POST">
+            {% csrf_token %}
+              <!--full name and email-->
+            <p>First Name: <input type="text" class="fname_lname" name="first_name" placeholder="Enter your first name" /></p>
+            <p>Last Name: <input type="text" class="fname_lname" name="last_name"placeholder="Enter your last name" /></p>
+            <p>Email: <input type="email" id="reg_email" name="email" placeholder="Enter email"/></p>
+            <p>
+            
+            <!--Password and confirm password-->
+            <p>Password: <input type="text" id="reg_pas" name="password" placeholder="Enter Password" /></p>
+            <p>Confirm Password: <input type="text" name="confirm_pw" placeholder="Reenter Password"/></p>
+            <button type="submit">Register</button>
+          </form>
+    </div>
+
+
+    <!--Login-->
+    <div id="right">
+        <form  action="/login" method="POST">
+            {% csrf_token %}
+              <p for="email">Email:
+                <input type="email" id="log_eamil" name="email" placeholder="Enter email"></p>
+              <p for="pwd">Password:
+                <input type="password"  id="pwd" name="password" placeholder="Enter password"></p>
+                <button type="submit">Login</button>
+          </form>
+    
+
+    </div>
+
+</div>
+    
+  </body>
+</html>

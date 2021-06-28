@@ -1,0 +1,35 @@
+@using DojoSurveyV.Models
+@model Survey
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/site.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+    <title> Result</title>
+</head>
+<body id="body">
+    <div id="box">
+
+    <h3>Sumbited Info:</h3>
+    
+        <p>Name: @Model.Name</p>
+        <p>Favorite Language: @Model.Language</p>
+        <p>Location: @Model.Location</p>
+        <p>Comments: @Model.Comment</p>
+        <div id="btn">
+    <button  type="button" class="btn btn-warning" value="Go Back"><a href="/" id="btnn" >Go Back</a></button>
+
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>

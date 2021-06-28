@@ -1,0 +1,12 @@
+﻿*{
+  color: rgb(39, 27, 66);
+}
+#box{
+  border: 2px dotted rgb(60, 34, 131);
+  width: 40%;
+  margin: auto;
+  align-items: center;
+}
+#btn{
+  margin-top: 1%;
+}

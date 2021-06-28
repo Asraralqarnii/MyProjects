@@ -1,0 +1,41 @@
+﻿#body{
+    background-color: rgb(216, 195, 216);
+    margin-top: 5%;
+    font-family: 'Times New Roman', Times, serif;
+}
+#box{
+   border: 1px solid black;
+   border-radius: 10px;
+   margin: auto;
+   align-items: center;
+   width: 30%;
+   padding: 10px 20px 30px 20px;
+   background-color: seashell;
+}
+#button{
+    width: 50%;
+    margin-top: 15%;
+    margin-left: 20%;
+    padding: 2%;
+    background-color: purple;
+    border: purple;
+    color: white;
+}
+.input1{
+    margin-left: 15%;
+    width: 50%;
+}
+.input2{
+    margin-left: 26%;
+    width: 50%;
+}
+.input3{
+    margin-left: 22.5%;
+    width: 50%;
+}.input4{
+    margin-left: 17%;
+    width: 50%;
+}
+.span{
+    color: rgb(153, 40, 40);
+}

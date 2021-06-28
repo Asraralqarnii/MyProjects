@@ -1,0 +1,94 @@
+body{
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+h1{
+    text-align: left;
+}
+input{
+    margin-left: 30px;
+      margin-bottom: 5px;
+      height: 30px;
+      width: 200px;
+      border: 2px solid black;
+      padding-left: 20px;
+      text-align:left;
+
+  }
+
+form {
+    display: table;
+}
+.messages{
+    color: red;
+}
+
+#log{
+    padding-left: 400px;
+}
+#header{
+    text-align: center;
+    display: flex;
+
+}
+#left{
+    padding-left: 40px;
+    width: 30%;
+    height: 600px;
+
+}
+#togther{
+    display: flex;
+}
+button{
+    margin-left: 70px;
+font-size: small;
+margin-bottom: 10px;
+width: 100px;
+height: 30px;
+margin-right: 150px;
+float: right;
+border: 2px solid black;
+background-color: white;
+font-weight: bold;
+}
+#right{
+    padding-left: 50px;
+    margin: 0px 10px 10px 30px;
+    width: 30%;
+    height: 350px;
+}
+#log_eamil {
+    margin-left: 20px;
+}
+#reg_email{
+    margin-left: 110px;
+}
+#Brith{
+    margin-left: 88px;
+}
+.fname_lname{
+    margin-left: 80px;
+}
+#reg_pas{
+    margin-left: 88px;
+}
+a{
+    float: right;
+}
+#pwd{
+    margin-left: -1px;
+}
+#conpas{
+    margin-right: 20px;
+    margin-left: -2px;
+}
+#body{
+    margin: 20px;
+    display: flex;
+}
+#login{
+margin-right: 0px;
+font-weight: bold;
+}

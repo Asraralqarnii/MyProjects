@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css'%}"> 
+    <title>Welcome</title>
+  </head>
+  <body>
+    <a id="logout" style="margin-top: 5px;" href="/logout">Logout</a> 
+    <h1>Welcome, {{ user.first_name}}!</h1>
+    <!--line-->
+    <div id="line"></div>
+    <div id="both">
+      <div id="left">
+        <h3>Add favoraite Book</h3>
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+      <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>
+        {{ message }}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <form action="/favorite_book/add" method="POST">
+      {% csrf_token %}
+      <p>Title<input style="margin-left: 75px;" type="text" name="title" /></p>
+      <p>Description<input style="height: 52px;" type="text" name="desc" /></p>
+      <button type="submit">Add!</button>
+    </form>
+      </div>
+      
+<div id="right">
+  <h3>All Books</h3>
+  {% for book in all_books %}
+   <h4> <a href="/books/{{book.id}}"> {{book.title}}</a> </h4>
+   <p> (added by {{book.upload_by.first_name}})</p>
+
+   {% if user not in book.fav_by.all %}
+      <a href="/books/{{book.id}}/favorite"> Add to favorite</a>
+      {% else %} <p>this is one of your favorites</p>
+      {% endif %}
+  {% endfor %}
+
+</div>
+   
+
+    </div>
+    
+  </body>
+</html>

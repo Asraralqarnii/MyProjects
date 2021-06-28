@@ -1,0 +1,104 @@
+body{
+    background-color: #c3d9ee;
+}
+  .content{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+  .centered {
+    position: absolute;
+    font-size: 50px;
+    top: 60%;
+    left: 50%;
+    font-family: Bangla MN;
+    transform: translate(-50%, -50%);
+  }
+
+.pagination {
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 45%;
+    margin-bottom: 20px;
+}
+.pagination-action{
+    margin: 1px;
+    display: inline-block;
+    padding: 4px 4px 0px 0px;
+    color: #B9B9B9;
+    font-size: 15px;
+
+}
+.pagination-action:hover{
+    color: #fff;
+
+}
+.con {
+  height: 650px;
+} 
+.pagination-number{
+    padding: 1px 10px 1px 10px;
+    color: #155d8f;
+    border-radius: 2px;
+    margin: 0px 2px 0px 2px;
+    text-decoration:none
+}
+.pagination-number:hover, .pagination-current{
+    background-color: #155d8f;
+    color: #fff;
+}
+.featured-image-list{
+    object-fit: cover;
+}
+#a1{
+    text-decoration: none;
+    margin-left: 10px;
+}
+#category_navbar{
+    display: inline;
+    text-decoration: none;
+    float: right;
+    float: 400px;
+
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    float: right;
+  }
+.sidenav h5 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+  /* The sidebar menu */
+.sidenav {
+    width: 200px; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    margin-left: 70px;
+    margin-top: 10px;
+    background-color: #c3d9ee;
+    overflow-x: hidden; 
+    
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #155d8f;
+  }
+  
+  .sidenav a:hover {
+    color:#fff;
+  }
+  

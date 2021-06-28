@@ -1,0 +1,51 @@
+﻿#body{
+  background-color: rgb(229, 214, 186);
+  margin-top: 5%;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+#box{
+ border: 1px solid black;
+ border-radius: 10px;
+ margin: auto;
+ align-items: center;
+ width: 30%;
+ padding: 10px 20px 50px 20px;
+ background-color: seashell;
+}
+#button{
+  width: 50%;
+  margin-top: 15%;
+  margin-left: 20%;
+  padding: 2%;
+  color: white;
+}
+.input1{
+  margin-left: 24%;
+  width: 50%;
+}
+.input2{
+  margin-left: 26%;
+  width: 50%;
+}
+.input3{
+  margin-left: 3%;
+  width: 49%;
+  padding: 4px 0px ;
+
+}.input4{
+  margin-left: 10%;
+  width: 49%;
+  padding: 4px 0px ;
+}
+.span{
+  color: rgb(153, 40, 40);
+}
+#btn{
+  margin-left: 60%;
+}
+#btnn{
+  text-decoration: none;
+  color: black;
+
+}

@@ -1,0 +1,68 @@
+
+#logout{
+    display: -webkit-flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+}
+button{
+    height: 25px;
+    border: 2px solid black;
+    width: 50px;
+    background-color: white;
+    font-size: small;
+    margin-right: 15px;
+    margin-left: 70px;
+}
+.messages{
+    color: red;
+}
+html {
+    height: 100%;
+    
+}
+body{
+    min-width: 100%;
+    min-height: 100%;
+
+}
+#body{
+    margin: 20px;
+}
+#line{
+    width: 95%;
+margin-left: 20px;
+margin-right: 20px;
+background-color: black;
+height: 1px;
+}
+
+input{
+    margin-left: 30px;
+      margin-bottom: 5px;
+      height: 30px;
+      width: 150px;
+      border: 2px solid black;
+      padding-left: 20px;
+      text-align:left;
+
+  }
+  #both{
+      display: flex;
+  }
+  #left{
+      display: inline-block;
+  }
+  #right{
+      display: inline-block;
+      margin-left: 20%;
+  }
+  #flex{
+      display: flex;
+  }
+  .btn{
+      width: 90px;
+  }
+  
+

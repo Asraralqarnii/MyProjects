@@ -1,0 +1,58 @@
+@model DojoSurveyV.Models.Survey
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="~/css/site.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+
+    <title>Home</title>
+</head>
+<body id="body">
+    <div id="box">
+<form asp-action="Create" asp-controller="Home" method="post">
+
+        <p>
+        <span asp-validation-for="Name" class="span"></span><br/>
+        <label asp-for="Name">Name:</label>
+        <input asp-for="Name" class="input1"/>
+        </p>
+
+        <span asp-validation-for="Location" class="span"></span><br/>
+        <label asp-for="Location">Dojo Location:</label>
+        <select asp-for="Location" class="input4">
+                 <option selected value=""></option>
+                <option value="San Jose"> San Jose </option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="San Diego">San Diego</option>
+        </select>
+        <p>
+        <span asp-validation-for="Language" class="span"></span><br/>
+                <label asp-for="Language">Favorite Language:</label>
+                <select asp-for="Language" class="input3">
+                        <option selected value=""></option>
+                        <option value="C#"> C# </option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                </select>
+        </p>
+        
+
+        <p>
+        <span asp-validation-for="Comment" class="span"></span><br/>
+        <label asp-for="Comment">Comment (optional):</label><br/>
+        <textarea asp-for="Comment"> </textarea>
+        </p>
+        
+    <button value="Sumbit" type="submit" class="btn btn-warning" id="button">Sumbit</button>
+
+</form>
+     
+    </div>
+</body>
+</html>

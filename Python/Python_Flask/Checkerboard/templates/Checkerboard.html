@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/chboard_stylesheet.css')}}">
+    </head>
+    <body>
+        <h1>Checkerboard Assignment!</h1>
+  
+          <table>
+            {% for x in range(rows) %}
+            <tr>
+              {% for j in range(columns) %}
+              <td class="color1" style="--color: {{bgcolor1}}"> </td>
+              <td class="color2" style="--color: {{bgcolor2}}"> </td>
+              {% endfor %}
+
+            </tr>
+
+            <tr>
+              {% for j in range(columns) %}
+              <td class="color2" style="--color: {{bgcolor2}}"> </td>
+              <td class="color1" style="--color: {{bgcolor1}}"> </td>
+              {% endfor %}
+            </tr>
+            
+            {% endfor %}
+
+            
+          </table>
+
+        
+        
+    </body>
+</html>
